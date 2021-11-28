@@ -13,6 +13,13 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
+# 添加插件源码
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
+# 添加插件源码
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+# passwall依赖
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+
 ### 修改为R4A千兆版Breed直刷版
 ## mt7621_xiaomi_mir3g-v2.dts 好像被改成了 mt7621_xiaomi_mi-router-4a-3g-v2.dtsi  测试一下
 ## 1.修改 mt7621_xiaomi_mir3g-v2.dts
