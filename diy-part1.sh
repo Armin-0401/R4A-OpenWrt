@@ -24,7 +24,10 @@ sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,sing*,smartdns} feeds/packages/utils/v2dat feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang -b 1.26 feeds/packages/lang/golang
 ./scripts/feeds install -a
-
+# 1. 深度清理可能衝突的套件與舊版 Golang
+rm -rf feeds/packages/lang/golang
+rm -rf feeds/luci/applications/luci-app-mosdns
+rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,sing*,smartdns}
 # 2. 修改 R4A 閃存佈局 (適配 Breed 直刷)
 # 採用區塊匹配，不再依賴不穩定的行號
 DTS_FILE="target/linux/ramips/dts/mt7621_xiaomi_mi-router-4a-3g-v2.dtsi"
