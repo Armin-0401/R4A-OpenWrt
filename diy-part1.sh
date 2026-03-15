@@ -61,7 +61,5 @@ rm -rf feeds/packages/lang/golang
 rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,sing*,smartdns}
 
-# 5. 強制更換 Golang 版本為 1.24 (支持 HomeProxy)
-# 使用 -b 指定 1.24 分支以確保穩定性
-git clone https://github.com/kenzok8/golang -b 1.24 feeds/packages/lang/golang
-
+# 使用golang分支
+git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
