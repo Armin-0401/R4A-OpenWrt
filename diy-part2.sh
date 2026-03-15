@@ -9,6 +9,8 @@
 # File name: diy-part2.sh
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 
+# 物理刪除報錯的 shadowsocksr-libev
+rm -rf feeds/small/shadowsocksr-libev
 #删除原默认主题
 # rm -rf package/lean/luci-theme-argon
 rm -rf package/lean/luci-theme-bootstrap
