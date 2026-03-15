@@ -65,5 +65,3 @@ rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,sing*,smartdns}
 # 使用 -b 指定 1.24 分支以確保穩定性
 git clone https://github.com/kenzok8/golang -b 1.24 feeds/packages/lang/golang
 
-# 6. 物理刪除報錯的 shadowsocksr-libev
-rm -rf feeds/small/shadowsocksr-libev
