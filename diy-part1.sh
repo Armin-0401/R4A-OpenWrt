@@ -40,4 +40,4 @@ sed -i 's/IMAGE_SIZE := .*/IMAGE_SIZE := 16064k/' target/linux/ramips/image/mt76
 
 # 4. 強制升級 Golang 以支持 HomeProxy
 rm -rf feeds/packages/lang/golang
-git clone https://github.com/kenzok8/golang -b 22.x feeds/packages/lang/golang
+git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
