@@ -26,7 +26,7 @@ DTS_FILE="target/linux/ramips/dts/mt7621_xiaomi_mi-router-4a-3g-v2.dtsi"
 if [ -f "$DTS_FILE" ]; then
     echo "Applying DTS Breed Patch..."
     # 刪除舊的 spi0 節點（從 &spi0 到 &pcie 之前）
-    sed -i '/&spi0 {/,/&pcie {/ { /&pcie {/!d }
+    sed -i '/&spi0 {/,/&pcie {/ { /&pcie {/!d }' "$DTS_FILE"
     
     # 使用 Here Document 產生臨時 patch 檔案，避開單引號解析問題
     cat << 'EOF' > dts_patch.txt
