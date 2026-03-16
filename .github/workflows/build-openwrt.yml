@@ -22,7 +22,7 @@ on:
       release:
         description: 'Upload firmware to release'
         required: false
-        default: 'false'
+        default: 'true'
         type: choice
         options:
           - "false"
