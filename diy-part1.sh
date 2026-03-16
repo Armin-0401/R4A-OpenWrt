@@ -19,4 +19,4 @@
 
 # 1. 添加第三方插件源
 echo 'src-git argon https://github.com/jerrykuku/luci-theme-argon' >>feeds.conf.default
-secho 'src-git homeproxy https://github.com/immortalwrt/homeproxy' >>feeds.conf.default
+echo 'src-git homeproxy https://github.com/immortalwrt/homeproxy' >>feeds.conf.default
