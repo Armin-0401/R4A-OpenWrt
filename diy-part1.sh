@@ -18,5 +18,5 @@
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 # 1. 添加第三方插件源
-sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+echo 'src-git argon https://github.com/jerrykuku/luci-theme-argon' >>feeds.conf.default
+secho 'src-git homeproxy https://github.com/immortalwrt/homeproxy' >>feeds.conf.default
